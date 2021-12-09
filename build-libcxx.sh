@@ -96,6 +96,8 @@ build_all() {
             -DCMAKE_CXX_COMPILER_TARGET=$arch-w64-windows-gnu \
             -DCMAKE_CROSSCOMPILING=TRUE \
             -DCMAKE_SYSTEM_NAME=Windows \
+            -DCMAKE_C_COMPILER_WORKS=TRUE \
+            -DCMAKE_CXX_COMPILER_WORKS=TRUE \
             -DLLVM_PATH="$LLVM_PATH" \
             -DCMAKE_AR="$PREFIX/bin/llvm-ar" \
             -DCMAKE_RANLIB="$PREFIX/bin/llvm-ranlib" \
